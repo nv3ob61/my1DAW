@@ -1,0 +1,58 @@
+     //Ordenar arraylist ascendentemente.
+
+   	// Get the ArrayList 
+        ArrayList<String> 
+            list = new ArrayList<String>(); 
+  
+        // Populate the ArrayList 
+        list.add("Geeks"); 
+        list.add("For"); 
+        list.add("ForGeeks"); 
+        list.add("GeeksForGeeks"); 
+        list.add("A computer portal"); 
+  
+        // Print the unsorted ArrayList 
+        System.out.println("Unsorted ArrayList: "
+                           + list); 
+  
+        // Sorting ArrayList in ascending Order 
+        // using Collection.sort() method 
+        Collections.sort(list); 
+  
+        // Print the sorted ArrayList 
+        System.out.println("Sorted ArrayList "
+                           + "in Ascending order : "
+                           + list); 
+
+---------------------------------------
+
+//Ordenar arraylist descendentemente.
+
+        // Get the ArrayList 
+        ArrayList<String> 
+            list = new ArrayList<String>(); 
+  
+        // Populate the ArrayList 
+        list.add("Geeks"); 
+        list.add("For"); 
+        list.add("ForGeeks"); 
+        list.add("GeeksForGeeks"); 
+        list.add("A computer portal"); 
+  
+        // Print the unsorted ArrayList 
+        System.out.println("Unsorted ArrayList: "
+                           + list); 
+  
+        // Sorting ArrayList in descending Order 
+        // using Collection.sort() method 
+        // by passing Collections.reverseOrder() as comparator 
+        Collections.sort(list, Collections.reverseOrder()); 
+  
+        // Print the sorted ArrayList 
+        System.out.println("Sorted ArrayList "
+                           + "in Descending order : "
+                           + list); 
+
+
+ArrayList clone() – ArrayList deep copy and shallow copy:
+https://howtodoinjava.com/java/collections/arraylist/arraylist-clone-deep-copy/

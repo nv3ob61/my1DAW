@@ -1,0 +1,41 @@
+﻿Persona (poner método saludar) (abstract) (implementa ISocial)
+
+nombre    (min 3 letras, max 20)
+
+
+No estamos interesados en crear personas (crear clase abstracta)
+
+Deriva en otra clase que se llama: Alumno y la clase Alumno implementa un interfaz que se llame
+IDocencia, con un método que sea tomarApuntes() void.
+
+Alumno (abstract) atributos: exp (expediente, int)
+
+Los alumnos derivarán en otros alumnos:
+
+alumnoSecundaria (abstract), que cuenta con el atributo: itinerario (char)  (eso, batx y ciclo)
+
+
+El alumnoSecundario tiene como hijo: AlumnoCic, con atributos: familia (char)  (diseño3d, informatica)
+
+[  -  Esto no es abstract
+AlumnoDaw y AlumnoAsir:
+
+AlumnoDaw tiene atributos: (tipo)  char -> FrontEnd, BackEnd
+
+AlumnoAsir  tiene atributos (adm)   char -> Dominios de internet, Disponibilidad, Bases datos.
+]
+
+
+Otras entidades: 
+
+Profesor -> especialidad  (String)
+AlumnoPri -> Tutor  (String)
+AlumnoBachiller -> Modalidad    (ciencia, humanidades, artist, techno)
+
+
+
+La gracia es implementar métodos
+
+ISocial: implementar método saludar():void
+
+

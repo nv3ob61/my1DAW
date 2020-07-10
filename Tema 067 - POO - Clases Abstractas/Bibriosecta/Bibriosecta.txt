@@ -1,0 +1,58 @@
+	// equals normal
+	@Override
+    public boolean equals(Object o) {
+        boolean testOk;
+        if (o == null) {
+            testOk = false;
+        } else if (!(o instanceof Clase)) {
+            testOk = false;
+        } else {
+            testOk = variable == ((Clase) o).variable;
+        }
+        return testOk;
+    }
+	
+	//equals boolean
+	@Override
+    public boolean equals(Object o) {
+        boolean testOK;
+        if (o == null) {
+            testOK = false;
+        } else if (!(o instanceof Cosa)) {
+            testOK = false;
+        } else {
+            testOK = comestibleOk == ((Cosa) o).isComestibleOk();
+        }
+        return testOK;
+	
+	// validar un nombre
+	private boolean validar(String nombre) {
+        boolean testOk = true;
+        for (int i = 0; i < nombre.length(); i++) {
+            if (Character.isLetterOrDigit(nombre.charAt(i))) {
+                testOk = testOk && true;
+            } else if (nombre.charAt(i) == ' ' || nombre.charAt(i) == '-') {
+                testOk = testOk && true;
+            } else {
+                testOk = false;
+            }
+
+        }
+        testOk = testOk
+                && nombre.length() >= LONG_MIN && nombre.length() <= LONG_MAX;
+        return testOk;
+    }
+
+
+  public void setNombre(String nombre) {
+    int cont = 0;
+    for (int i = 0; i < nombre.length(); i++) {
+      if (!Character.isLetterOrDigit(i) && !Character.isWhitespace(i)
+              && i != '-') {
+        cont++;
+      }
+    }
+    if (cont == 0) {
+      this.nombre = nombre;
+    }
+  }

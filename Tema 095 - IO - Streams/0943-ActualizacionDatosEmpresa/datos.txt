@@ -1,0 +1,6 @@
+denominación,fecha de registro,capital social
+Amparito Roca SL
+19/03/2020
+18.12€
+Avda. Juan Palomo, 12, 3o A
+Faura, Valencia
